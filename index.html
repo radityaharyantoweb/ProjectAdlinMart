@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdlinMart - Supermarket Modern</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+  <!-- Custom CSS hasil compile SASS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        Adlin<span class="text-warning">Mart</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <!-- indikator titik -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="img/hero.avif" class="d-block w-100 hero-slide" alt="Hero 1">
+
+        <div class="carousel-caption hero-caption">
+          <h1 class="fw-bold display-5">
+            Belanja Hemat di <span class="text-warning">AdlinMart</span>
+          </h1>
+          <p class="lead">
+            Produk lengkap, harga bersahabat, dekat dari rumah.
+          </p>
+          <a href="#produk" class="btn btn-warning fw-bold px-4 py-2">Lihat Produk</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="img/hero2.avif" class="d-block w-100 hero-slide" alt="Hero 2">
+
+        <div class="carousel-caption hero-caption">
+          <h1 class="fw-bold display-5">Promo Weekend Diskon Besar!</h1>
+          <p class="lead">Diskon sampai 25% khusus weekend 😼</p>
+          <a href="#produk" class="btn btn-warning fw-bold px-4 py-2">Cek Promo</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="img/heroo3.jpg" class="d-block w-100 hero-slide" alt="Hero 3">
+
+        <div class="carousel-caption hero-caption">
+          <h1 class="fw-bold display-5">Bisa Pesan Antar 🚚</h1>
+          <p class="lead">Chat WhatsApp, kami antar sampai rumah.</p>
+          <a href="#kontak" class="btn btn-warning fw-bold px-4 py-2">Hubungi Kami</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- tombol prev/next -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <div class="col-lg-6">
+          <img src="img/about.avif" class="img-fluid rounded-4 shadow" alt="Foto toko">
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Tentang AdlinMart</h2>
+          <p class="text-muted mt-3">
+            AdlinMart adalah supermarket modern yang menyediakan kebutuhan sehari-hari dengan harga ramah.
+            Kami fokus pada pelayanan cepat, stok lengkap, dan kualitas barang yang terjaga.
+          </p>
+
+          <ul class="list-group list-group-flush mt-3">
+            <li class="list-group-item bg-light">✅ Produk lengkap dan fresh</li>
+            <li class="list-group-item bg-light">✅ Harga hemat untuk semua kalangan</li>
+            <li class="list-group-item bg-light">✅ Bisa pesan antar lewat WhatsApp</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES / PRODUK -->
+  <section id="produk" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Produk Unggulan</h2>
+        <p class="text-muted">Beberapa produk favorit pelanggan di AdlinMart</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="img/beras.avif" class="card-img-top product-img" alt="Beras">
+            <div class="card-body">
+              <h5 class="fw-bold">Beras Premium</h5>
+              <p class="text-muted small">Kualitas pulen & wangi.</p>
+              <p class="fw-bold text-success">Rp 85.000</p>
+              <button class="btn btn-dark w-100">Beli</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="img/minyak.avif" class="card-img-top product-img" alt="Minyak">
+            <div class="card-body">
+              <h5 class="fw-bold">Minyak Goreng</h5>
+              <p class="text-muted small">Hemat 2 liter.</p>
+              <p class="fw-bold text-success">Rp 20.000</p>
+              <button class="btn btn-dark w-100">Beli</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="img/snack.avif" class="card-img-top product-img" alt="Snack">
+            <div class="card-body">
+              <h5 class="fw-bold">Snack & Jajanan</h5>
+              <p class="text-muted small">Cemilan lengkap.</p>
+              <p class="fw-bold text-success">Mulai Rp 4.000</p>
+              <button class="btn btn-dark w-100">Beli</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card product-card h-100 border-0 shadow-sm">
+            <img src="img/sabundeterjen.avif" class="card-img-top product-img" alt="Deterjen">
+            <div class="card-body">
+              <h5 class="fw-bold">Sabun & Deterjen</h5>
+              <p class="text-muted small">Bersih maksimal.</p>
+              <p class="fw-bold text-success">Mulai Rp 7.000</p>
+              <button class="btn btn-dark w-100">Beli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROMO -->
+      <div class="promo-box mt-5 p-5 rounded-4 shadow text-light">
+  <div class="row align-items-center g-4">
+
+    <div class="col-lg-7">
+      <h3 class="fw-bold">Promo Minggu Ini 🎉</h3>
+      <p class="mb-2 text-white-50">
+        Belanja makin hemat di KlontongMart! Diskon spesial buat kamu yang belanja weekend.
+      </p>
+
+      <ul class="list-unstyled mb-4">
+        <li>✅ Paket Beras + Minyak Diskon 10%</li>
+        <li>✅ Beli 3 Snack Gratis 1</li>
+        <li>✅ Deterjen 2kg Potongan Rp 5.000</li>
+      </ul>
+
+      <a href="#kontak" class="btn btn-warning fw-bold px-4">
+        Ambil Promo Sekarang
+      </a>
+    </div>
+
+    <div class="col-lg-5 text-center">
+      <div class="discount-badge">
+        <span class="discount-text">25%</span>
+        <p class="mb-0 fw-bold">DISKON</p>
+        <small class="text-white-50">Khusus Weekend</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO / GALERI -->
+  <section id="galeri" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Galeri AdlinMart</h2>
+        <p class="text-muted">Suasana toko dan produk yang tersedia</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-lg-4">
+          <img src="img/galeri.avif" class="img-fluid gallery-img shadow-sm" alt="Galeri 1">
+        </div>
+        <div class="col-6 col-lg-4">
+          <img src="img/galeri2.avif" class="img-fluid gallery-img shadow-sm" alt="Galeri 2">
+        </div>
+        <div class="col-12 col-lg-4">
+          <img src="img/galeri3.avif" class="img-fluid gallery-img shadow-sm" alt="Galeri 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">FAQ</h2>
+      <p class="text-muted">Pertanyaan yang sering ditanyakan pelanggan</p>
+    </div>
+
+    <div class="accordion shadow-sm" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            Apakah AdlinMart bisa pesan antar?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Bisa banget, kamu tinggal isi form kontak atau chat WhatsApp, nanti kami antar sesuai area terdekat.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            Apakah ada minimal pembelian?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Tidak ada minimal pembelian. Mau beli 1 item pun tetap dilayani.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            Metode pembayaran apa saja yang tersedia?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Bisa cash, transfer bank, dan QRIS.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            Jam buka AdlinMart sampai jam berapa?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Kami buka setiap hari dari jam <b>10.00 sampai 22.00</b>.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Testimoni Pelanggan</h2>
+      <p class="text-muted">Apa kata pelanggan setelah belanja di KlontongMart</p>
+    </div>
+
+    <div id="testimoniCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="4000">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="testi-card shadow-sm">
+            <p class="mb-3">
+              "Barang lengkap banget, harga murah, pelayanan ramah. Mantap!"
+            </p>
+            <h6 class="fw-bold mb-0">⭐ Siti Nur</h6>
+            <small class="text-muted">Pelanggan</small>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testi-card shadow-sm">
+            <p class="mb-3">
+              "Pesan antar cepat, respon admin juga sat-set. Recommended 😼"
+            </p>
+            <h6 class="fw-bold mb-0">⭐ Fajar Hadi</h6>
+            <small class="text-muted">Pelanggan</small>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="testi-card shadow-sm">
+            <p class="mb-3">
+              "Produk selalu fresh, gak pernah kecewa belanja di sini."
+            </p>
+            <h6 class="fw-bold mb-0">⭐ Rina Putri</h6>
+            <small class="text-muted">Pelanggan</small>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimoniCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#testimoniCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section id="kontak" class="py-5 bg-dark text-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-warning">Hubungi Kami</h2>
+      <p class="text-white-50">Mau tanya stok atau pesan antar? Kirim pesan aja</p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+
+      <!-- FORM -->
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-lg rounded-4 h-100">
+          <div class="card-body p-4 p-md-5">
+            <h4 class="fw-bold text-center mb-4">Form Kontak</h4>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="nama">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="Nama kamu..." required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="contoh@email.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="pesan">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan kamu..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-warning fw-bold w-100 py-2">
+                Kirim Pesan
+              </button>
+            </form>
+
+            <div class="text-center mt-4 text-muted small">
+              Rembang, Jawa Tengah | 📞 0821-3701-2696
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAPS -->
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-lg rounded-4 h-100 overflow-hidden">
+          <div class="card-body p-0 h-100">
+            <div class="p-3 bg-dark text-light fw-bold">
+                Lokasi AdlinMart
+            </div>
+            <iframe
+              class="w-100 h-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15848.367583678702!2d111.47184155881405!3d-6.758647994894608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77181b125fe0fd%3A0xa06f39457482c613!2sBen%20Makmur!5e0!3m2!1sid!2sid!4v1779108702548!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              width="100%"
+              height="100%"
+              style="border:0; min-height: 450px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-light py-4">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <h5 class="fw-bold">AdlinMart</h5>
+          <p class="text-white-50 small mb-0">
+            Supermarket modern dengan produk lengkap dan harga bersahabat.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="fw-bold">Menu</h6>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">Tentang</a></li>
+            <li><a href="#produk" class="footer-link">Produk</a></li>
+            <li><a href="#kontak" class="footer-link">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="fw-bold">Jam Operasional</h6>
+          <p class="small mb-1">Senin - Minggu: 06.00 - 22.00</p>
+          <p class="small mb-0 text-white-50">Siap melayani kebutuhan harianmu.</p>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-3">
+
+      <p class="text-center text-white-50 small mb-0">
+        © 2026 AdlinMart | AdlinAzfar
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
